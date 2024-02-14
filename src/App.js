@@ -13,7 +13,7 @@ function App() {
   const [hidden, setHidden] = useState(true);
   const [result, setResult] = useState(true);
 
-  let qnum = 9;
+  let qnum = 1;
 
 
   const onClickNext = (selection) => {

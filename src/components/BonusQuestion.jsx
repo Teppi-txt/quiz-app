@@ -3,6 +3,8 @@ import KahootAnswers from "./KahootAnswers";
 import { useRef, useState } from "react";
 import {Answer} from "./KahootAnswers";
 import { useEffect } from "react";
+import bear from '../gif.gif';
+import heart from '../heart.png';
 
 export default function BonusQuestion({activeQuestion, onAnswerClick, transitionScreen, setResult}) {
     const [activeAnswers, setActiveAnswers] = useState(['(っ◔◡◔)っ ♥ Yes ♥', 'no']);
@@ -66,6 +68,15 @@ export default function BonusQuestion({activeQuestion, onAnswerClick, transition
                 </div>
                 : 
                 <div className="bonus-question">
+                    <img src={bear}></img>
+                    <div className="hearts">
+                        <img src={heart}></img>
+                        <img src={heart}></img>
+                        <img src={heart}></img>
+                        <img src={heart}></img>
+                        <img src={heart}></img>
+                        <img src={heart}></img>
+                    </div>
                     <h1>
                         Will you be my valentines?
                     </h1>
